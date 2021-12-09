@@ -40,7 +40,7 @@ void BFSPATH(vector<int>distance ,int dest,vector<int> &path)
      
     cout<<"the Shortest path is of total"<<"--------"<<shortDistance<<endl;
         
-    
+    cout<<"Shortest path ---> \t";
     
     for(int i=1;i<path.size();i++){
         cout<<PlacesOutput.find(path[i])->second<<"->";
@@ -174,13 +174,6 @@ int main()
     {15,{15,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0}}
     };
     
-    //     map<int,vector<int> > Places={
-    //     {0,{0,4,10,0,12}},
-    //     {1,{4,0,0,14,13}},
-    //     {2,{10,0,0,12,14}},
-    //     {3,{0,14,12,0,15}},
-    //     {4,{12,13,14,15,0}},
-    // };
     
     map<int,vector<int> >::iterator it;
 
