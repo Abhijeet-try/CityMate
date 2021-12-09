@@ -1,15 +1,19 @@
 # CityMate
 Minor Project 1 
 Abstract:
+
 The traveling salesman problem is a permutation problem in which the goal is to find the shortest path between N different cities that the salesman takes is called the TOUR. In other words, the problem deals with finding a route covering all cities so that the total distance traveled is minimal. This paper gives a solution to find an optimum route for traveling salesman problem using Genetic algorithm technique, in which cities are selected randomly as initial population. The new generations are then created repeatedly until the proper path is reached upon reaching the stopping criteria
 
 Introduction:
+
 CityMate as the name suggests it has something to do with travelling in a city or travelling in any scope . For finding shortest distance between places , usually we go to google maps and get things done but What if ! we need various stops ,What if ! we need to plan our daily travels in the quickest way possible.This is where CityMate comes into play we worked on different algorithms to find the best way people didn’t think they needed .
 
  Literature Review:
+ 
 The Travelling Salesman Problem (TSP) [1] is an optimization problem used to find the shortest path to travel through the given number of cities. Travelling salesman problem states that given a number of cities N and the distance between the cities, the traveler has to travel through all the given cities exactly once and return to the same city from where he started and also the cost of the path is minimized. This path is called as the tour and the path length is the cost of the path. In a complete weighted undirected graph G (V, E), cities are represented by the vertices and the distance between the cities are represented by the edges. The travelling salesman problem has to find the minimized Hamilton cycle that starts from some specified vertex, visits all other vertices exactly once return to the same specified vertex. The travelling salesman problem is used in many application areas [2] like planning, logistics, manufacturing of microchips, DNA sequencing, vehicle routing problems, robotics, airport flight scheduling, time and job scheduling of machines. The travelling salesman problem can be classified as Symmetric Travelling Salesman Problem (STSP), Asymmetric Travelling Salesman Problem (ATSP), and Multi Travelling Salesman Problem (MTSP). (i) STSP: In STSP the distance between two cities is same in both the directions that mean this will result in an undirected graph. (ii) ATSP: In ATSP the distance between two cities is not same in both directions. It is a directed graph and distance is different in both the directions. (iii) MTSP: In a given set of nodes, let there be ‘m’ salesmen located at a single depot node. The remaining nodes (cities) that are to be visited are intermediate nodes. Then, the MTSP finds the tours for all ‘m’ salesmen, who all start and end at the place, such that each intermediate node (city) is visited exactly once and the total cost of visiting all nodes is minimized. Solution of TSP may be of two types. The first will find the optimal solution which is almost nearer to the exact solution. This will guarantee the quality of the solution, but it is very slow. The second will find the nearest optimal solution within a reasonable time. It will not guarantee that the solution is nearer to the exact solution. So to improve the solution space and to increase the performance genetic algorithms are used to solve the travelling salesman problem which also gives the result within a reasonable amount of time..
  
 Objective:
+
 ●	The objective of this project is to develop a console based C++ application named as City-Mate which  finds the optimal  route to travel between various cities (Locations).
 ●	Understanding C++ language and Data-structures
 
