@@ -176,7 +176,7 @@ int main()
 
     cout<< "----------------Location label---------------------"<<endl<<"0:1st block \n1:2nd block \n2:3rd block \n3:4th block \n4:5th block \n5:6th block \n6:7th block \n7:8th block \n8:9th block \n9:10th block \n10:11th block \n11:12th block \n12:MAC \n13:Library \n14:Ground \n15:Food court \n";
     int location[V];
-    cout<<"\nEnter all the 4 location"<<endl;
+    cout<<"\nEnter all the 5 location"<<endl;
     
     for(int i=0;i<V;i++){
         if(i==0){
