@@ -29,16 +29,19 @@ map<int,string>PlacesOutput={
 };
 
 map<int,string>::iterator it1;
+int shortDistance=0;
 
 //function for printing the shortest path 
 
-void BFSPATH(int distance[] ,int dest,vector<int> &path)
+void BFSPATH(vector<int>distance ,int dest,vector<int> &path)
 {
-    for(int i=0;i<V;i++){
-        if(i==dest){
-        cout<<"the Shortest path is of total"<<"--------"<<distance[i]<<endl;
-        }
-    }
+    
+  
+     
+    cout<<"the Shortest path is of total"<<"--------"<<shortDistance<<endl;
+        
+    
+    
     for(int i=1;i<path.size();i++){
         cout<<PlacesOutput.find(path[i])->second<<"->";
     }
@@ -102,7 +105,7 @@ void mincost(int city,int location[V])
 
 // function to find minimum distance between two node
 
-int minimumDistance (int distance[],bool visited[])
+int minimumDistance (vector<int>distance,bool visited[])
 {
     int mini=INT_MAX;
     int miniIndex;
@@ -121,7 +124,7 @@ int minimumDistance (int distance[],bool visited[])
 void BFS(int graph[V][V],int src,int dest)
 {
     vector<int> path;
-    int distance[V];
+    vector<int> distance(V);
     bool visited[V];
 
 
@@ -171,6 +174,13 @@ int main()
     {15,{15,18,19,20,21,22,23,24,25,26,27,28,29,30,31,0}}
     };
     
+    //     map<int,vector<int> > Places={
+    //     {0,{0,4,10,0,12}},
+    //     {1,{4,0,0,14,13}},
+    //     {2,{10,0,0,12,14}},
+    //     {3,{0,14,12,0,15}},
+    //     {4,{12,13,14,15,0}},
+    // };
     
     map<int,vector<int> >::iterator it;
 
@@ -208,6 +218,7 @@ int main()
     
     cout<<endl;
     int src=location[0],dest=location[V-1];
+    shortDistance=Places.find(location[0])->second[location[V-1]];
     cout<<"-----------------------------------RESULT-------------------------"<<endl;
     BFS(graph, src,dest);
 
